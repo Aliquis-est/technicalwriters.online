@@ -1,0 +1,32 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page38792862.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^index$ page38792862.html [NC]
+RewriteRule ^index/$ page38792862.html [NC]
+
+RewriteRule ^techwriterbooks$ page40275829.html [NC]
+RewriteRule ^techwriterbooks/$ page40275829.html [NC]
+
+RewriteRule ^analystbooks$ page42126813.html [NC]
+RewriteRule ^analystbooks/$ page42126813.html [NC]
+
+RewriteRule ^cookies$ page49421403.html [NC]
+RewriteRule ^cookies/$ page49421403.html [NC]
+
+RewriteRule ^privacy$ page52320107.html [NC]
+RewriteRule ^privacy/$ page52320107.html [NC]
+
+RewriteRule ^general-privacy$ page54113679.html [NC]
+RewriteRule ^general-privacy/$ page54113679.html [NC]
+
+RewriteRule ^oferta_foto$ page54118631.html [NC]
+RewriteRule ^oferta_foto/$ page54118631.html [NC]
+
+
