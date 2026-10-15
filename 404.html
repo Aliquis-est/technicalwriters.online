@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>404 — страница не найдена</title>
+    <style>
+        body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+               background: #f2f2f2; color: #000; font-family: 'TildaSans', Arial, sans-serif; text-align: center; padding: 0 16px; }
+        h1 { font-size: 72px; margin: 0 0 8px; }
+        p { font-size: 20px; margin: 0 0 32px; }
+        a { display: inline-block; padding: 14px 28px; background: #000; color: #fff; text-decoration: none; border-radius: 30px; }
+    </style>
+</head>
+<body>
+<div>
+    <h1>404</h1>
+    <p>Такой страницы нет на сайте «База знаний для технических писателей».</p>
+    <a id="home" href="/">На главную</a>
+</div>
+<script>
+    // GitHub Pages отдаёт 404.html по любому адресу, поэтому ссылку на главную вычисляем:
+    // на username.github.io/repo/ это /repo/, на собственном домене — /.
+    (function () {
+        var h = location.hostname, seg = location.pathname.split('/')[1];
+        if (/\.github\.io$/.test(h) && seg && h.split('.')[0] !== seg) {
+            document.getElementById('home').href = '/' + seg + '/';
+        }
+    })();
+</script>
+</body>
+</html>
