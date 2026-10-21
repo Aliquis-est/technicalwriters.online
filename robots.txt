@@ -1,13 +1,4 @@
-User-Agent: *
-Disallow: /tilda/form*
-Disallow: /tilda/rec*
-Disallow: /tilda/click*
-Disallow: /tilda/scroll*
-Disallow: /tilda/popup*
-Disallow: /tilda/cart*
-Disallow: /tilda/product*
-Disallow: /tilda/event*
-Disallow:
+User-agent: *
+Allow: /
 
-
-Sitemap: http://techwritersbase.online/sitemap.xml
+Sitemap: https://aliquis-est.github.io/technicalwriters.online/sitemap.xml
