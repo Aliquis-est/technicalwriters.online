@@ -1,6 +1,6 @@
 # База знаний для технических писателей
 
-Сайт: https://aliquis-est.github.io/technicalwriters.online/
+Сайт: https://technicalwriters.online/
 
 Статический сайт для GitHub Pages: обычные HTML-страницы, общий стиль `assets/site.css` и небольшой скрипт `assets/site.js` (баннер cookie и подсветка оглавления). Сборка не нужна.
 
@@ -41,7 +41,14 @@ GitHub Pages сам отдаёт `techwriterbooks.html` по адресу `/tech
 
 Строки автора и ISBN можно убрать. Не забудьте поправить число книг в заголовке раздела, в оглавлении и под заголовком страницы.
 
-## Собственный домен
+## Домен
 
-Чтобы сайт открывался по собственному домену, укажите его в Settings → Pages → Custom domain
-(GitHub создаст файл `CNAME`) и настройте DNS у регистратора по инструкции GitHub.
+Домен `technicalwriters.online` зарегистрирован в REG.RU, DNS обслуживает Cloudflare (`jule.ns.cloudflare.com`, `lakas.ns.cloudflare.com`). Записи в Cloudflare, все в режиме **DNS only** (серое облачко):
+
+| Тип | Имя | Значение |
+|---|---|---|
+| A | @ | 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153 (четыре записи) |
+| CNAME | www | aliquis-est.github.io |
+| TXT | _github-pages-challenge-Aliquis-est | код подтверждения домена в GitHub — не удалять |
+
+Файл `CNAME` в корне репозитория хранит домен для GitHub Pages — не удаляйте его. Адрес https://aliquis-est.github.io/technicalwriters.online/ перенаправляет на домен.

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aliquis-est.github.io/technicalwriters.online/sitemap.xml
+Sitemap: https://technicalwriters.online/sitemap.xml
