@@ -17,6 +17,7 @@ Pages публикует ветку `main`, папку `/ (root)`. Чтобы о
 | `/` | `index.html` |
 | `/techwriterbooks` | `techwriterbooks.html` |
 | `/analystbooks` | `analystbooks.html` |
+| `/library` | `library.html` — «Домашняя библиотека техписателя», фото книг |
 | `/cookies` | `cookies.html` |
 | `/general-privacy` | `general-privacy.html` |
 | `/oferta_foto` | `oferta_foto.html` |
